@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Array Functions</title>
+</head>
+<body>
+    <script>
+        function arr1() {
+            alert("Array method 1");
+            var array1 = [12, true, "Mumbai", "Navi Mumbai", "Kharghar"];
+            alert(array1.length);
+            var ctr = 0; 
+            while (ctr < array1.length) {
+                alert(array1[ctr]);
+                ctr++;
+            }
+            array1.reverse(); 
+            alert(array1.toString());
+            alert(array1[3]);
+        }
+        
+        function arr2() {
+            alert("Array method 2");
+            var ctr = new Array(10); 
+            document.write("<hr>");
+            ctr.push("Mumbai"); 
+            document.write("The Length of the array is " + ctr.length);
+            document.write("<hr>");
+            document.write(ctr.toString());
+            document.write("<hr>");
+            ctr.pop(); 
+            ctr.pop(); 
+            document.write("<hr>");
+            document.write("The array after pop");
+            document.write(ctr.toString()); 
+        }
+        
+        function arr3() {
+            alert("Array method 3");
+            let ctr = new Array();
+            ctr[0] = "Monday";
+            ctr[1] = "Tuesday";
+            ctr.push("Wednesday"); 
+            ctr.push("Thursday"); 
+           
+            for (let i = 0; i < ctr.length; i++) {
+                document.write("<p style='color:red; font-size:2em;'>");
+                document.write(ctr[i]);
+                document.write("</p>");
+            }
+        }
+    </script>
+    
+    <input type="button" onclick="arr1()" value="Array1">
+    <br>
+    <br>
+
+    <input type="button" onclick="arr2()" value="Array2">
+    <br>
+    <br>
+
+    <input type="button" onclick="arr3()" value="Array3">
+    <br>
+    <br>
+
+</body>
+</html>
